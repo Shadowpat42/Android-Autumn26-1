@@ -1,5 +1,6 @@
 import parser.CsvParser
 import resolver.Resolver
+import visualization.createVariant2Charts
 
 fun main() {
     val input = Thread.currentThread()
@@ -61,4 +62,9 @@ fun main() {
 
     println("Не дороже медианы: ${shares.first}")
     println("Дороже медианы: ${shares.second}")
+
+    println()
+    println("===== ЗАДАНИЕ 4 =====")
+
+    createVariant2Charts(result.players)
 }
